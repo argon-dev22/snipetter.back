@@ -31,7 +31,3 @@ const uploadRoute = require("./routes/upload");
 app.use("/users", userRoute);
 app.use("/posts", postRoute);
 app.use("/upload", uploadRoute);
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../docs", "index.html"));
-});
