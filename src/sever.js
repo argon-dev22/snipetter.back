@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 // サーバー立ち上げ
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`ポート${PORT}でサーバーが起動しました`));
 
 // json解析
