@@ -32,7 +32,7 @@ const UserSchema = new mongoose.Schema(
       },
       comment: {
         type: String,
-        default: "",
+        default: "Hello World",
       },
     },
     followings: {
