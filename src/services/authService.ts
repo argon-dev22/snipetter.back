@@ -16,7 +16,7 @@ const signup = async (signupInput: ISignupData) => {
     STATUS.UNAUTHORIZED
   );
 
-  return await authRepository.insertUser(signupInput);
+  return await authRepository.insert(signupInput);
 };
 
 const login = async (loginInput: ILoginData) => {
